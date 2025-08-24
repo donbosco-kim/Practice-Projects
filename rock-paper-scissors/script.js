@@ -16,7 +16,7 @@ function getComputerChoice() {
 }
 
 //Test the function
-console.log(getComputerChoice());
+//console.log(getComputerChoice());
 
 //function to get player choice
 function getPlayerChoice() {
@@ -30,3 +30,5 @@ function getPlayerChoice() {
         return playerChoice;
     }
 }
+//Test the function
+console.log(getPlayerChoice());
