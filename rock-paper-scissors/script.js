@@ -31,7 +31,7 @@ function getPlayerChoice() {
     }
 }
 //Test the function
-console.log(getPlayerChoice());
+//console.log(getPlayerChoice());
 
 //function to determine winner
 function determineWinner(playerChoice, computerChoice) {
@@ -51,3 +51,11 @@ function determineWinner(playerChoice, computerChoice) {
         return `You lose! ${computerChoice} beats ${playerChoice}`;
     }
 }
+
+//function to play game and test determineWinner function
+function playGame(){
+    const playerChoice = getPlayerChoice();
+    const computerChoice = getComputerChoice();
+    console.log(determineWinner(playerChoice, computerChoice));
+}
+playGame();
