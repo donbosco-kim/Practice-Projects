@@ -32,3 +32,22 @@ function getPlayerChoice() {
 }
 //Test the function
 console.log(getPlayerChoice());
+
+//function to determine winner
+function determineWinner(playerChoice, computerChoice) {
+    if (playerChoice === computerChoice) {
+        return 'It is a tie!';
+    }else if (playerChoice === 'rock' && computerChoice === 'scissors') {
+        return `You win! ${playerChoice} beats ${computerChoice}`;
+    }else if (playerChoice === 'paper' && computerChoice === 'rock') {
+        return `You win! ${playerChoice} beats ${computerChoice}`;
+    }else if (playerChoice === 'scissors' && computerChoice === 'paper') {
+        return `You win! ${playerChoice} beats ${computerChoice}`;
+    }else if (playerChoice === 'rock' && computerChoice === 'paper'){
+        return `You lose! ${computerChoice} beats ${playerChoice}`;
+    }else if (playerChoice === 'paper' && computerChoice === 'scissors') {
+        return `You lose! ${computerChoice} beats ${playerChoice}`;
+    }else {
+        return `You lose! ${computerChoice} beats ${playerChoice}`;
+    }
+}
