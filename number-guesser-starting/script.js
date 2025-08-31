@@ -37,3 +37,10 @@ function updateScore(winner){
 //updateScore('computer');
 //console.log(humanScore);
 //console.log(computerScore);
+
+function advanceRound(){
+    currentRoundNumber += 1;
+    return currentRoundNumber;
+}
+//test advanceRound function
+//console.log(advanceRound());
