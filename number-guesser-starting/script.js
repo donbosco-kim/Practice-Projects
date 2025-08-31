@@ -12,6 +12,7 @@ const generateTarget = () => {
 
 function compareGuesses(humanGuess, computerGuess, secretTargetNumber){
     //calculate the distance of each guess from the secret number
+    //Math.abs() is used to compare distance from the target (ignoring whether the guess is higher or lower)
     const humanDifference = Math.abs(humanGuess - secretTargetNumber);
     const computerDifference = Math.abs(computerGuess - secretTargetNumber);
 
@@ -24,3 +25,15 @@ function compareGuesses(humanGuess, computerGuess, secretTargetNumber){
 }
 //test compareGuesses function
 //console.log(compareGuesses(5, 5, 10)); -> return true
+
+function updateScore(winner){
+    if (winner === 'human'){
+        humanScore++;
+    }else {
+        computerScore++;
+    }
+}
+//test updateScore function
+//updateScore('computer');
+//console.log(humanScore);
+//console.log(computerScore);
