@@ -6,7 +6,7 @@ const taskInput = document.getElementById("task");
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 //get the <ul> element that will display the task items
-const taskList = document.querySelector("#taskList ul");
+const taskList = document.querySelector("ul");
 
 //load existing tasks from the array and display them
 for (let task of tasks){
