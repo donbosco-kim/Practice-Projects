@@ -31,8 +31,19 @@ function loadTask(task){
         deleteTask(task, li);
     }
 
+    //create update button
+    const updateBtn = document.createElement("button");
+    updateBtn.textContent = "✏";
+
+    //use the updateTask function
+    updateBtn.onclick = function(){
+        updateTask(task, li);
+    }
+
     //append the deleteBtn to the list <li> element
     li.appendChild(deleteBtn);
+    //append the updateBtn to the list <li> element
+    li.appendChild(updateBtn);
 
     //append the list to the task list <ul> element
     taskList.appendChild(li);
@@ -41,7 +52,7 @@ function loadTask(task){
 //function to add a new task from the input text field
 function addTask(){
     //get the value entered
-    const taskValue = taskInput.value;
+    const taskValue = taskInput.value.trim();
 
     //check if the input element value is not empty
     if (taskValue !== ""){
@@ -58,8 +69,30 @@ function addTask(){
 
 //function to update/edit a task
 
-function updateTask(){
+function updateTask(task, listItem){
+    //ask user for new text
+    const newTask = prompt("Edit your task:", task);
 
+    //if user cancels, stop here
+    if (!newTask) return;
+
+    //trim whitespace from the entered value
+    const trimmedTask = newTask.trim();
+
+    //ensure user entered a value 
+    if(trimmedTask !== ""){
+        //update tasks array
+        const index = tasks.indexOf(task);
+        if(index !== -1){
+            tasks[index] = trimmedTask;
+        }
+
+        //update DOM
+        listItem.firstChild.textContent = trimmedTask;
+
+        //save to localStorage
+        saveTask();
+    }
 }
 
 //function to delete a task
