@@ -55,7 +55,17 @@ li {
     background: gray;
     margin-bottom: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border-radius: 4px;
+}
+
+/*push btns to the right and keep them close*/
+li button:first-child {
+    /*push first btn to the far right*/
+    margin-left:auto;
+}
+
+/*small gap between delete and update btns*/
+li button{
+    margin-left: 5px;
 }
