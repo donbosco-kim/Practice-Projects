@@ -1,0 +1,42 @@
+
+.maincontainer {
+    border: solid black;
+    border-width: 2px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.inputField {
+    margin-bottom: 15px;
+}
+
+.inputField input {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-align: right;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box; /*prevent overflow*/
+}
+
+.secondarycontainer {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 10px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
