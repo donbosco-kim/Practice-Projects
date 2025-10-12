@@ -4,10 +4,12 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Hero Container */
 .hero {
     background-color: #1f2937;
 }
+
+/* Navigation Section */
 
 .navBar {
     display: flex;
@@ -31,7 +33,6 @@ body {
 .navLinks a {
     font-size: 18px;
     color: #e5e7eb;
-    font-weight: 500;
 }
 
 /* Hero content */
@@ -49,23 +50,76 @@ body {
     font-weight: 900;
 }
 
+.heroText p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
 .heroImage {
     border: solid white 2px;
     width: 500px;
     height: 200px;
 }
 
-/*Buttons color*/
+/* Buttons color */
 button {
     background-color: #3882F6;
     border-radius: 5px;
     cursor: pointer;
 }
 
-/*footer*/
+/* Images section */ 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+.imageCard {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    max-width: 160px;
+    border: solid rgb(29, 56, 209) 2px;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/* Quote section */
+.randomQuote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e5e7eb;
+}
+
+blockquote {
+    max-width: 750px;
+    max-height: 360px;
+}
+
+blockquote p {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
+}
+
+/* footer */
 footer {
     text-align: center;
     background-color: #1f2937;
     height: 80px;
-    margin-top: 155px;
 }
