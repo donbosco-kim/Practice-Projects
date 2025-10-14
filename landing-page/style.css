@@ -1,3 +1,4 @@
+
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -7,6 +8,7 @@ body {
 /* Hero Container */
 .hero {
     background-color: #1f2937;
+    padding-bottom: 60px;
 }
 
 /* Navigation Section */
@@ -17,17 +19,20 @@ body {
     align-items: center;
     max-width: 80%;
     margin: 0 auto;
+    padding: 20px 0;
 }
 
 .navBar img {
-    font-size: 24px;
-    color: #F9FAF8;
+    width: 50px;
+    height: auto;
 }
 
 .navLinks {
     display: flex;
     gap: 1.5rem;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navLinks a {
@@ -42,29 +47,42 @@ body {
     align-items: center;
     max-width: 80%;
     margin: 0 auto;
+    gap: 2rem;
+}
+
+.heroText {
+    max-width: 50%;
 }
 
 .heroText h1{
     color: #F9FAF8;
     font-size: 48px;
     font-weight: 900;
+    margin-bottom: 15px;
 }
 
 .heroText p {
     font-size: 18px;
     color: #e5e7eb;
+    margin-bottom: 25px;
 }
 
 .heroImage {
     border: solid white 2px;
-    width: 500px;
-    height: 200px;
+}
+
+.heroImage img {
+    max-width: 500px;
+    max-height: 250px;
 }
 
 /* Buttons color */
 button {
     background-color: #3882F6;
+    color: white;
     border-radius: 5px;
+    border: none;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -81,8 +99,7 @@ button {
 }
 
 .imageCard {
-    max-width: 200px;
-    max-height: 200px;
+    max-height: 300px;
 }
 
 figure {
@@ -117,9 +134,51 @@ blockquote p {
     font-weight: 300;
 }
 
+/* Call to action */
+.callToAction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.callToAction > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882F6;
+    color:#e5e7eb;
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 60%;
+    max-width: 800px;
+    min-width: 300px;
+}
+.callToAction h4, .callToAction p {
+    margin: 0;
+}
+
+.callToActionText {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+}
+
+.callToAction button {
+    color: #e5e7eb;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 /* footer */
 footer {
     text-align: center;
     background-color: #1f2937;
+    color:#F9FAF8;
+    padding: 20px 20px;
     height: 80px;
 }
