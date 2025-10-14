@@ -79,9 +79,10 @@ body {
 /* Buttons color */
 button {
     background-color: #3882F6;
-    color: white;
-    border-radius: 5px;
-    border: none;
+    color: #e5e7eb;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 10px 25px;
     font-size: 16px;
     cursor: pointer;
 }
